@@ -15,7 +15,7 @@
 	url = https://github.com/sparkfun/Qwiic_SCMD_Py.git
 [submodule "qwiic_i2c"]
 	path = qwiic_i2c
-	url = https://github.com/sparkfun/Qwiic_I2C_Py.git
+	url = https://github.com/binhollc/Qwiic_I2C_Py.git
 [submodule "drivers/qwiic_keypad"]
 	path = qwiic/drivers/qwiic_keypad
 	url = https://github.com/sparkfun/Qwiic_Keypad_Py.git

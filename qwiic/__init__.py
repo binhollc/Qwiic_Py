@@ -255,7 +255,7 @@ def list_devices():
     # match scan, with definition
     for address in found_devices:
 
-        if address in qwiic_devs.keys():
+        if address in tuple(qwiic_devs.keys()):
             # make the return tuple
             found_qwiic.append((address, qwiic_devs[address].device_name, \
                 qwiic_devs[address].__name__))

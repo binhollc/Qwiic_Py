@@ -2,7 +2,7 @@ import qwiic
 import qwiic_joystick
 import time
 import sys
-import os
+import subprocess as sp
 
 print()
 print()
@@ -30,6 +30,15 @@ if myJoystick.connected == True:
 	useJoystick = True
 	myJoystick.begin()
 
+print("3...")
+time.sleep(1)
+print("2...")
+time.sleep(1)
+print("1...")
+time.sleep(1)
+print("Time to dance!")
+time.sleep(1)
+
 while True:
 
 	if useJoystick:
@@ -37,7 +46,7 @@ while True:
 		y = myJoystick.vertical
 		b = myJoystick.button
 
-		os.system('clear')
+		sp.call('cls',shell=True)
 		if x > 575:
 			print(" o _") 
 			print(" /\\")  

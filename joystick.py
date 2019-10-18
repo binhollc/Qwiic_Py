@@ -33,7 +33,6 @@ if myJoystick.connected == True:
 while True:
 
 	if useJoystick:
-		time.sleep(.5)
 		x = myJoystick.horizontal
 		y = myJoystick.vertical
 		b = myJoystick.button
